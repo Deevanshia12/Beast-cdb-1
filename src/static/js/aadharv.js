@@ -5,7 +5,7 @@ if(regexp1.test($('#age').val()))
 
 return false;
 }else{
-document.getElementById("demo").innerHTML
+$("#age").parent().next(".validation").remove();
 }
     });
 
