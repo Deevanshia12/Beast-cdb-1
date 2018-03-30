@@ -5,7 +5,7 @@ if(regexp1.test($('#age').val()))
 
 return false;
 }else{
-$("#age").parent().next(".validation").remove();
+            $("#email").parent().after("<div class='validation' style='color:red;margin-bottom: 20px;'>Please enter email address</div>");
 }
     });
 
