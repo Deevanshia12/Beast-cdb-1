@@ -1,5 +1,9 @@
 {% extends 'base.html' %}
 {% block title %}DOT's Dashboard{% endblock %}
+{% block link_file %}
+
+    <script src="{{url_for('static',filename = 'js/loginv.js')}}"></script>
+{% endblock %}
 
 {% block header %}
         <a class="navbar-brand" href="#">Department of Telecommunications Ministry of Communication</a>
@@ -37,12 +41,19 @@
                     <form role="form" action="{{ url_for('admin.login_user')}}" method="POST">
                         <fieldset>
                             <div class="form-group">
-                                <input class="form-control" placeholder="Username" name="username" type="text">
+                                <label class="form-control-label" for="inputSuccess1">Username:</label>
+                                <input type="text" class="form-control" name="i1" id="inputSuccess1"  placeholder="Username"required>
+                                <div class="valid-feedback">Success! You've done it.</div>
+                                <div class="invalid-feedback">No, you missed this one.</div>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" placeholder="Password" name="password" type="password">
+                               <label class="form-control-label" for="inputSuccess2">Password:</label>
+                               <input type="Password" class="form-control" name="i2" required id="inputSuccess2" placeholder="Password" required>
+                                <div class="valid-feedback">Nice! You got this one!</div>
+                                <div class="invalid-feedback">Sorry, you missed this one.</div>
                             </div>
-                            <input class="btn btn-lg btn-success btn-block" type="submit" value="Login">
+                            <div>
+                            <input class="btn btn-lg btn-success btn-block" type="submit" id="btnSubmit" value="Login">
                         </fieldset>
                     </form>
                 </div>
