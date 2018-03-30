@@ -3,11 +3,13 @@ $('#age').focusout(function(){
 if(regexp1.test($('#age').val()))
 {
    $("#feedback").css('display','block')
+    $("#feedback").css('hide','block')
 
 return false;
 }else{
 
     $("#notfeedback").css('display','block')
+    $("#notfeedback").css('hide','block')
 }
     });
 
