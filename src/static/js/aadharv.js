@@ -5,6 +5,8 @@ if(regexp1.test($('#age').val()))
 
 return false;
 }else{
+
+    $("#feedback").css('display','block');
      $("#age").parent().after("<div class='validation' style='color:red;margin-bottom: 20px;'>Invalid Aadhaar</div>");
 $("#age").parent().next(".validation").remove();
 }
