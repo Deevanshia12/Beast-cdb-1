@@ -1,7 +1,7 @@
 
 function validate()
 {
-    $('#age').onfocusout(function(){
+    $('#age').focusout(function(){
         alert();
     });
 var regexp1=new RegExp("^(([\\d]{4}\\ ){2}[\\d]{4})|([\\d]{12})$");
