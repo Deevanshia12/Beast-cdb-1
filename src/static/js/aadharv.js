@@ -5,7 +5,7 @@ if(regexp1.test($('#age').val()))
 
 return false;
 }else{
-document.write("Invalid Aadhaar")
+document.getElementById("demo").innerHTML="Invalid Aadhaar"
 }
     });
 
