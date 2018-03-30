@@ -1,4 +1,5 @@
-$('#age').focusout(function(){
+$('#age').click(function(){
+    console.log('here');
         alert();
     });
 function validate()
