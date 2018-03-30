@@ -1,4 +1,4 @@
-$('#age').click(function(){
+$('#age').focusout(function(){
     console.log('here');
         alert();
     });
