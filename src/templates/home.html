@@ -1,8 +1,5 @@
 {% extends 'base.html' %}
-{% block javascript %}
 
-    <script src="{{ url_for('static',filename="js/aadharv.js") }}"></script>
-{% endblock %}
 
 {% block header %}<a class="navbar-brand" href="#">Department of Telecommunications Ministry of Communication</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -26,6 +23,7 @@
         </ul>
     </div>
 {% endblock %}
+
 {% block body %}
     {% with success = get_flashed_messages(category_filter=["success"]) %}
         {% if success %}
