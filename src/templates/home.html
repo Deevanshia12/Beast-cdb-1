@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block link_file %}
-
+<link rel="stylesheet" href="{{ url_for('static',filename="js/otpu.js") }}">
 {% endblock %}
 
 {% block header %}
@@ -86,7 +86,7 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <button type="submit" class="btn btn-success btn-sm float-right"
+                                        <button onclick="myFunction()" type="submit" class="btn btn-success btn-sm float-right"
                                                 id="btnLogin" ons>Send OTP
                                         </button>
                                     </div>

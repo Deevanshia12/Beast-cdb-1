@@ -13,5 +13,13 @@ return false;
 
 }
     });
+$('#age').focusin(function()
+{
+     $("#notfeedback").hide()
+     $("#feedback").hide()
+
+}
+    );
+
 
 
