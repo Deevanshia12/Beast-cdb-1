@@ -9,10 +9,12 @@ else{
     $("#notfeedback").css('display','none');
 
 }
-    })
+    });
 
 
-
+Function Myfunction(){
+    location.reload();
+}
 
 
 
