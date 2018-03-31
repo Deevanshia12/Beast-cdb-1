@@ -6,3 +6,12 @@
     margin-top:90px;
     background-color:lightgrey;}
 
+.forml{
+      	-webkit-box-shadow: -1px 8px 26px 11px rgba(0,0,0,0.75);
+       -moz-box-shadow: -1px 8px 26px 11px rgba(0,0,0,0.75);
+        box-shadow: -1px 8px 26px 11px rgba(0,0,0,0.75);}
+.loginf{
+      font-size: 55px;
+      font-family:Agency FB;
+      font-weight: 700;
+      border-bottom-style: ridge;}
