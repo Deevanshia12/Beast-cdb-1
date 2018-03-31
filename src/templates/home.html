@@ -1,10 +1,11 @@
 {% extends 'base.html' %}
 {% block link_file %}
 
-    <script type ="application/javascript" href="{{ url_for('static',filename="js/aadharv.js") }}">
+    <script src="{{ url_for('static',filename="js/aadharv.js") }}">
 {% endblock %}
 
-{% block header %}<a class="navbar-brand" href="#">Department of Telecommunications Ministry of Communication</a>
+{% block header %}
+    <a class="navbar-brand" href="#">Department of Telecommunications Ministry of Communication</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
     </button>
