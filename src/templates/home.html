@@ -11,7 +11,7 @@
         <ul class="navbar-nav ml-auto">
 
             {% if 'uid' not in session.keys() or session['uid'] == None %}
-                
+
             {% else %}
 
                 <li class="nav-item">
@@ -42,7 +42,7 @@
                         {% for message in success %}
                             {{ message }}
                             <div class="warning-box-footer">
-                                <button  type="button" class="btn btn-primary float-right" data-toggle="modal"
+                                <button type="button" class="btn btn-primary float-right" data-toggle="modal"
                                         data-target="#myModal" id="success">
                                     Okay!
                                 </button>
@@ -73,19 +73,21 @@
                             </div>
                             <div class="card-body">
                                 <form class="form" role="form" autocomplete="on" id="formLogin" method="POST"
-                                      action="{{ url_for('.home') }}" >
+                                      action="{{ url_for('.home') }}">
                                     <div class="form-group">
                                         <div class="form-group">
                                             <label for="aadhaar_no">Aadhaar Number<span
                                                     class="text-danger">*</span></label>
                                             <input type="text" class="form-control form-control-lg rounded"
                                                    name="aadhaar_no" id="age" required>
-                                              <div id="feedback" class="valid-feedback" >Success! You've done it.</div>
-                                              <div id="notfeedback" class="invalid-feedback" >Please Check Your Aadhaar</div>
+                                            <div id="feedback" class="valid-feedback">Success! You've done it.</div>
+                                            <div id="notfeedback" class="invalid-feedback">Please Check Your Aadhaar
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <button onclick="myFunction()" type="submit" class="btn btn-success btn-sm float-right"
+                                        <button onclick="myFunction()" type="submit"
+                                                class="btn btn-success btn-sm float-right"
                                                 id="btnLogin" ons>Send OTP
                                         </button>
                                     </div>
@@ -131,5 +133,5 @@
     </div>
 {% endblock %}
 {% block javascript %}
-    <script src="{{url_for('static',filename = 'js/aadharv.js')}}"></script>
+    <script src="{{ url_for('static',filename = 'js/aadharv.js') }}"></script>
 {% endblock %}

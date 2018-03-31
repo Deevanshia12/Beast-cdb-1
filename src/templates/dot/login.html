@@ -2,8 +2,8 @@
 {% block title %}DOT's Dashboard{% endblock %}
 {% block link_file %}
 
-    <link rel="stylesheet" href="{{ url_for('static',filename="css/style1.css") }}">
-     <link rel="stylesheet" href="{{ url_for('static',filename="css/font1(1).css") }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename="css/login1.css") }}">
+     <link rel="stylesheet" href="{{ url_for('static',filename="css/font1.css") }}">
 
     <script src="{{url_for('static',filename = 'js/loginv.js')}}"></script>
 {% endblock %}
@@ -33,41 +33,36 @@
     </div>
 {% endblock %}
 {% block body %}
-    <div class="main-content-agile">
-    <div class="sub-main-w3">
+    <div class="well well-lg  jumb">
     <div class="center-wrapper">
         <div class="center-container">
             <div class="panel panel-default border border-light bg-light">
 
                 <div class="panel-heading ">
-                    <h3 class="panel-title ">DOT LOGIN</h3>
+                    <h3 class="panel-title "><b>DOT LOGIN</b></h3>
                 </div>
                 <div class="panel-body">
                     <form role="form" action="{{ url_for('admin.login_user')}}" method="POST">
                         <fieldset>
-                            <div class="form-group pom-agile">
+                            <div class="form-group">
                                 <label class="form-control-label" for="inputSuccess1">Username:</label>
-                                <span class="fa fa-user-o" aria-hidden="true"></span>
                                 <input type="text" class="form-control" name="i1" id="inputSuccess1"  placeholder="Username"required>
                                 <div class="valid-feedback">Success! You've done it.</div>
                                 <div class="invalid-feedback">No, you missed this one.</div>
                             </div>
-                            <div class="form-group pom-agile">
+                            <div class="form-group ">
                                <label class="form-control-label" for="inputSuccess2">Password:</label>
-                                 <span class="fa fa-user-o" aria-hidden="true"></span>
                                <input type="Password" class="form-control" name="i2" required id="inputSuccess2" placeholder="Password" required>
                                 <div class="valid-feedback">Nice! You got this one!</div>
                                 <div class="invalid-feedback">Sorry, you missed this one.</div>
                             </div>
                             <div class="right-w3l>
-                            <input class="btn btn-lg btn-success btn-block" type="submit" id="btnSubmit" value="Login">
+                            <input class="btn btn-lg btn-success btn-block"  type="submit" id="btnSubmit" value="Login">
                             </div>
                         </fieldset>
                     </form>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
     </div>
 {% endblock %}
